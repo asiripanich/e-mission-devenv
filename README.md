@@ -30,6 +30,10 @@ git clone https://github.com/e-mission/e-mission-phone.git src/e-mission-phone
 git clone https://github.com/e-mission/e-mission-server.git src/e-mission-server
 ```
 
+### Configuration
+
+Update `<your laptop ip>` with your IP Address in `res/e-mission/phone/connectionConfig.json`
+
 ### Installation
 
 Simply execute the `auto-install.sh` script
