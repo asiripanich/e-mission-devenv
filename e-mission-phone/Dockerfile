@@ -7,7 +7,7 @@ RUN npm i -g bower
 
 WORKDIR /usr/src/app
 COPY /src/ ./
-RUN git clone -b megumi-brt --single-branch https://github.com/e-mission/e-mission-phone.git .
+RUN git clone -b cci-berkeley --single-branch https://github.com/e-mission/e-mission-phone.git . 
 RUN ./bin/configure_xml_and_json.js serve
 RUN npm i
 RUN bower install --allow-root
