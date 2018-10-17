@@ -1,1 +1,1 @@
-docker build -f Dockerfile-phone -t e-mission-phone:latest ./src/e-mission-phone
+docker build -f Dockerfile-phone -t e-mission-phone:latest .
