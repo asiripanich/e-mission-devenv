@@ -40,7 +40,7 @@ Simply execute the `auto-install.sh` script
 
 ### Auto-Install Products
 
-| Type             | Name             | Reference                    | Listening Port |
+| Type             | Name             | Remarks                      | Listening Port |
 |------------------|------------------|------------------------------|---------------:|
 | Docker image     | e-mission-phone  | size: ~400MB                 |            N/A |
 | Docker image     | e-mission-server | size: ~8GB                   |            N/A |
