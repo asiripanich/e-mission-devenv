@@ -40,13 +40,13 @@ Simply execute the `auto-install.sh` script
 
 ### Auto-Install Products
 
-| Type             | Name             | Remarks                      | Listening Port |
-|------------------|------------------|------------------------------|---------------:|
-| Docker image     | e-mission-phone  | size: ~400MB                 |            N/A |
-| Docker image     | e-mission-server | size: ~8GB                   |            N/A |
-| Docker network   | ems              |                              |            N/A |
-| Docker volume    | ems-mongo_data   | ems-mongo's data volume      |            N/A |
-| Docker container | ems-mongo        | base image: mongo:latest     |          27018 |
-| Docker container | ems-phone        | base image: e-mission-phone  |           3000 |
-| Docker container | ems-server       | base image: e-mission-server |           8080 |
+| Type             | Name             | Remarks                      |    Listening Port |
+|------------------|------------------|------------------------------|------------------:|
+| Docker image     | e-mission-phone  | size: ~400MB                 |               N/A |
+| Docker image     | e-mission-server | size: ~8GB                   |               N/A |
+| Docker network   | ems              |                              |               N/A |
+| Docker volume    | ems-mongo_data   | ems-mongo's data volume      |               N/A |
+| Docker container | ems-mongo        | base image: mongo:latest     | 27018, alt: 27019 |
+| Docker container | ems-phone        | base image: e-mission-phone  |  3000, alt: 13000 |
+| Docker container | ems-server       | base image: e-mission-server |  8080, alt: 18080 |
 
