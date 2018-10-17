@@ -1,10 +1,25 @@
 #!/bin/bash
 
-# Setup network
-./e-mission-database/dk_create_network.sh
+#
+# Prerequisites
+#
+./prerequisites.sh
 
-# Setup & run mongoDB
-./e-mission-database/dk_mongoDB_run.sh
+#
+# Build images
+#
+./build.phone.sh
+./build.server.sh
+
+#
+# Prepare network
+#
+./init.network.sh
+
+#
+# Run dependencies
+#
+./run.mongo.sh
 
 # Setup & run gateway
 # ./e-mission-gateway/setup.sh

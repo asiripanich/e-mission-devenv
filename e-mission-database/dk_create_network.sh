@@ -1,1 +1,0 @@
-docker network create e-mission-server --driver=bridge
