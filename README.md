@@ -42,8 +42,8 @@ Simply execute the `auto-install.sh` script
 
 | Type             | Name             | Reference                    | Listening Port |
 |------------------|------------------|------------------------------|---------------:|
-| Docker image     | e-mission-phone  |                              |            N/A |
-| Docker image     | e-mission-server |                              |            N/A |
+| Docker image     | e-mission-phone  | size: ~400MB                 |            N/A |
+| Docker image     | e-mission-server | size: ~8GB                   |            N/A |
 | Docker network   | ems              |                              |            N/A |
 | Docker volume    | ems-mongo_data   | ems-mongo's data volume      |            N/A |
 | Docker container | ems-mongo        | base image: mongo:latest     |          27018 |
