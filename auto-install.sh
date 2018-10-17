@@ -21,14 +21,11 @@
 #
 ./run.mongo.sh
 
+#
+# Run app
+#
+./run.server.sh
+./run.phone.sh
+
 # Setup & run gateway
 # ./e-mission-gateway/setup.sh
-
-# Setup & run server
-cd e-mission-server
-./setup.sh
-cd ..
-
-# Setup & run phone locally
-cd e-mission-phone
-./setup.sh
