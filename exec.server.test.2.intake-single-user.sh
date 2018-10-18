@@ -1,0 +1,1 @@
+docker exec -it ems-server /bin/bash -c "./e-mission-py.bash bin/debug/intake_single_user.py -e test_july_22"

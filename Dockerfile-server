@@ -18,7 +18,7 @@ RUN /bin/bash -c "source activate emission; pip install six --upgrade"
 
 # Add dependencies (for importing test data)
 # i.e. test_july_22
-RUN pip install future pymongo arrow attrdict geojson
+RUN pip install future pymongo arrow attrdict geojson utm pygeocoder jsonpickle
 
 # install nodejs, npm and bower
 RUN apt-get update
