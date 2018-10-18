@@ -9,9 +9,16 @@ WORKDIR /usr/src/app
 
 COPY ./src/e-mission-server/ ./
 
+# Upgrade pip
+RUN pip install --upgrade pip
+
 # setup python environment
 RUN conda env update --name emission --file setup/environment36.yml
 RUN /bin/bash -c "source activate emission; pip install six --upgrade"
+
+# Add dependencies (for importing test data)
+# i.e. test_july_22
+RUN pip install future pymongo arrow attrdict geojson
 
 # install nodejs, npm and bower
 RUN apt-get update

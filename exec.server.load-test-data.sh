@@ -1,0 +1,1 @@
+docker exec -it ems-server /bin/bash -c "./e-mission-py.bash bin/debug/load_timeline_for_day_and_user.py emission/tests/data/real_examples/shankari_2015-07-22 test_july_22"
