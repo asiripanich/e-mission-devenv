@@ -54,3 +54,11 @@ Simply execute the `auto-install.sh` script
 | Docker container | ems-phone        | base image: e-mission-phone  |  3000, alt: 13000 |
 | Docker container | ems-server       | base image: e-mission-server |  8080, alt: 18080 |
 
+### File mapping
+
+- phone
+  - `connectionConfig.json`: `/usr/src/app/www/json/connectionConfig.json`
+- server
+  - `db.conf`: `/usr/src/app/conf/storage/db.conf`
+  - `webserver.conf`: `/usr/src/app/conf/net/api/webserver.conf`
+  - `seed_model.json`: `/usr/src/app/seed_model.json`
