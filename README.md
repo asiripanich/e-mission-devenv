@@ -62,3 +62,20 @@ Simply execute the `auto-install.sh` script
   - `db.conf`: `/usr/src/app/conf/storage/db.conf`
   - `webserver.conf`: `/usr/src/app/conf/net/api/webserver.conf`
   - `seed_model.json`: `/usr/src/app/seed_model.json`
+
+
+### Running ems-server with seed_model.json
+
+To run `ems-server` with `seed_model.json`,
+
+put `seed_model.json` to `res/e-mission-server/confidentials/seed_model.json`.
+
+This file will not be published onto github repository.
+
+Then add the following line **before the last line** of `run.server.sh` file:
+
+```
+--mount type=bind,source="$(pwd)"/res/e-mission-server/confidentials/seed_model.json,target=/usr/src/app/seed_model.json,readonly \
+```
+
+Then execute `run-force.server.sh`
