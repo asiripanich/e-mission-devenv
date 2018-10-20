@@ -34,11 +34,11 @@ WORKDIR /usr/src/app
 RUN apt-get -y install nano
 
 # Add analysis pipeline cronjob
-# ADD ./res/e-mission-server/scripts/run.cronjob.sh /usr/src/app/run.cronjob.sh
-# RUN chmod u+x /usr/src/app/run.cronjob.sh
-# ADD ./res/e-mission-server/crontab /etc/cron.d/pipeline-cron
-# RUN chmod 0644 /etc/cron.d/pipeline-cron
-# RUN mkdir /var/log/emission
+ADD ./res/e-mission-server/scripts/run.cronjob.sh /usr/src/app/run.cronjob.sh
+RUN chmod u+x /usr/src/app/run.cronjob.sh
+ADD ./res/e-mission-server/crontab /etc/cron.d/pipeline-cron
+RUN chmod 0644 /etc/cron.d/pipeline-cron
+RUN mkdir /var/log/emission
 
 # start the server and run cron
 ADD ./res/e-mission-server/scripts/run.app.sh /usr/src/app/run.app.sh
