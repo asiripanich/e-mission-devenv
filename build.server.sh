@@ -1,1 +1,1 @@
-docker build -f Dockerfile-server -t e-mission-server:latest .
+docker build -f Dockerfile-server -t e-mission-server:master .
