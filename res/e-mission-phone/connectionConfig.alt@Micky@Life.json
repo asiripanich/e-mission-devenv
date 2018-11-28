@@ -1,0 +1,16 @@
+{
+    "connectUrl": "http://10.0.1.56:18080",
+    "android": {
+        "auth": {
+            "method": "dummy-dev",
+            "clientID": "ignored"
+        }
+    },
+    "ios": {
+        "auth": {
+            "method": "dummy-dev",
+            "clientID": "ignored"
+        }
+    }
+  }
+  
