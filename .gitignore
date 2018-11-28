@@ -3,3 +3,6 @@ src/e-mission-phone
 src/e-mission-server
 res/e-mission-phone/confidentials
 res/e-mission-server/confidentials
+
+logs/
+logs.*
