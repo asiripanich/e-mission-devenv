@@ -1,0 +1,18 @@
+FROM node:9-alpine
+
+RUN apk --no-cache add git
+
+RUN npm i -g npm
+RUN npm i -g bower
+
+WORKDIR /usr/src/app
+COPY ./src/e-mission-phone-rk-unsw/ ./
+RUN ./bin/configure_xml_and_json.js serve
+RUN npm i
+RUN bower install --allow-root
+
+RUN npm run setup-serve
+
+EXPOSE 3000
+
+CMD ["npm", "run", "serve"]
