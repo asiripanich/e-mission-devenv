@@ -2,7 +2,7 @@ FROM node:9-alpine
 
 RUN apk --no-cache add git
 
-RUN npm i -g npm
+RUN npm i -g npm@6.0.0
 RUN npm i -g bower
 
 WORKDIR /usr/src/app
